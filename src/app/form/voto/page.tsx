@@ -1,5 +1,6 @@
 "use client";
 import Box from "@/components/box";
+import '@/assets/styles/global.css'
 import { Candidato } from "@/app/api/votos";
 import React, { useEffect, useState } from "react";
 
@@ -28,10 +29,11 @@ export default function Voto() {
   
   return( 
   <>
-  <div className=" grid grid-cols-3 grid-rows-[auto]">
+  <h1 className=" text-center">Vote em qual você mais gostou</h1>
+  <div className=" gap-y-[50px] pt-[10px] grid grid-cols-3 grid-rows-[auto] justify-between w-[100%] justify-items-center">
    {data.map(box=>{
     console.log(box)
-      return <Box nome={box.Nome} color={box.color} img={box.Img}/>
+      return <Box Nome={box.Nome} Color={box.Color} Img={box.Img} Votos={box.Votos}/>
    })}
   </div>
   </>
