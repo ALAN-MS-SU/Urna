@@ -6,4 +6,18 @@
 }
 .form input{
     border-radius: 5px;
+    box-shadow: 1px 2px 0px;
+}
+.form button{
+    transition: all ease .3s;
+    background-color: var(--second-color);
+    color: var(--font-color-2);
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.form button:hover{
+    background-color: var(--first-color);
+    
 }
