@@ -1,0 +1,9 @@
+.form{
+    background-color: var(--thrid-color);
+    box-shadow: 5px 10px 15px;
+    border-radius: 5px;
+    
+}
+.form input{
+    border-radius: 5px;
+}

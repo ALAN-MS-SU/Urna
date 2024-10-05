@@ -1,0 +1,21 @@
+.navbar{
+    border-bottom: var(--first-color) 2px solid;
+    color:var(--font-color-1);
+    padding: 20px;
+}
+.nav-button{
+    transition: all ease .3s;
+    background: transparent;
+    color: var(--font-color-1);
+    cursor: pointer;
+    padding: 10px;
+    text-wrap: nowrap;
+    font-size: 1.1rem;
+    border-bottom: solid 2px var(--second-color);
+    border-radius: 3px;
+    
+}
+.nav-button:hover{
+    background-color: var(--second-color);
+    color: var(--font-color-2);  
+}
