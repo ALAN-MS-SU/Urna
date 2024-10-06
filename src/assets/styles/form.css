@@ -5,8 +5,8 @@
     
 }
 .form input{
-    border-radius: 5px;
-    box-shadow: 1px 2px 0px;
+    border-radius: 2px;
+    border-bottom: 2px solid var(--second-color);
 }
 .form button{
     transition: all ease .3s;

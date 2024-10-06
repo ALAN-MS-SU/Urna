@@ -9,7 +9,6 @@ export default function Navbar(){
       <h1 className=" relative left-40">Bem-vindo á votação!</h1>
       <ul className=" gap-6 relative right-40 list-none flex flex-row items-center justify-between w-40">
         <li><Link href={{pathname:"/form"}} className="nav-button">Votar</Link></li>
-        <li><Link href={{}} className="nav-button">Ver votos</Link></li>
       </ul>
     </nav>
     )

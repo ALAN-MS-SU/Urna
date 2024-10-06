@@ -1,14 +1,11 @@
-export interface User {
-  Nome: string;
-  Titulo: number;
-}
+
 export interface Candidato {
   Img: string;
   Nome: string;
   Votos: number;
   Color: string;
 }
-export const users: User[] = [];
+export const users: string[] = [];
 export const canditados: Candidato[] = [
   {
     Nome: "Sonic 2",
@@ -23,7 +20,7 @@ export const canditados: Candidato[] = [
     Img: `${process.env.images}the_last_of_us.webp`,
   },
   {
-    Nome: "surge",
+    Nome: "Cupehead",
     Votos: 0,
     Color: "rgb(174, 53, 53)",
     Img: `${process.env.images}cuphead.webp`,
@@ -34,4 +31,16 @@ export const canditados: Candidato[] = [
     Color: "red",
     Img: `${process.env.images}mario.jpg`,
   },
+  {
+    Nome: "FNAF",
+    Votos: 0,
+    Color: "purple",
+    Img: `${process.env.images}fnaf.webp`,
+  },
+  {
+    Nome: "Angry Birds",
+    Votos: 0,
+    Color: "black",
+    Img: `${process.env.images}angry_birds.png`,
+  }
 ];
