@@ -4,7 +4,7 @@ export default function Box(props: any) {
   console.log(props)
   return (
     <div
-      className="box overflow-hidden rounded-[10px] w-[400px] h-[400px] flex flex-col items-center"
+      className="box overflow-hidden rounded-[10px] w-[300px] h-[400px] flex flex-col items-center xl:w-[400px]"
       style={{ border: `solid 3px ${props.Color}` }}
     >
       <img className=" object-fill w-[100%] h-[80%]" src={props.Img} />

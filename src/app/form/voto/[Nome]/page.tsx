@@ -29,8 +29,8 @@ export default function Voto({ params }: any) {
 
   return (
     <>
-      <h1 className=" text-center">Vote em qual você mais gostou</h1>
-      <div className=" gap-y-[50px] pt-[10px] grid grid-cols-3 grid-rows-[auto] justify-between w-[100%] justify-items-center">
+      <h1 className=" text-center text-[120%] md:text-[150%] xl:text-[200%]">Vote em qual você mais gostou</h1>
+      <div className=" gap-y-[50px] pt-[10px] grid grid-cols-1  grid-rows-[auto] justify-between w-[100%] justify-items-center xl:grid-cols-3 md:grid-cols-2">
         {data.map((box) => {
           console.log(box);
           return (

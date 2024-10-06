@@ -11,11 +11,11 @@ export default function Votar() {
     <div className=" flex flex-col items-center justify-center h-[100dvh] w-[100%]">
       <form
         ref={form}
-        className="form grid grid-cols-2 w-[500px] items-center justify-items-center  justify-center h-[400px]"
+        className="form grid md:grid-cols-2 grid-cols-1 w-[300px] items-center justify-items-center  justify-center h-[400px] md:w-[500px] sm:w-[400px]"
       >
         <label
           htmlFor="Nome"
-          className="w-[90%] h-[30px] text-end relative right-[50px]"
+          className="w-[90%] h-[30px] md:text-end text-center relative md:right-[50px]"
         >
           Nome:
         </label>
@@ -23,7 +23,7 @@ export default function Votar() {
         placeholder="Nome"
           id="Nome"
           name="Nome"
-          className=" w-[210px] h-[30px] relative right-[30px] outline-none"
+          className=" w-[210px] h-[30px] relative md:right-[30px] outline-none"
           type="text"
         />
         <button type="reset">Limpar</button>

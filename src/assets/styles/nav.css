@@ -19,3 +19,13 @@
     background-color: var(--second-color);
     color: var(--font-color-2);  
 }
+@media (max-width:1024px) {
+     .navbar{
+        font-size: 90%;
+     }
+}
+@media (max-width:480px) {
+     .navbar{
+        font-size: 70%;
+     }
+}

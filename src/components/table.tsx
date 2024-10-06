@@ -1,8 +1,9 @@
 "use client";
-import { Candidato } from "@/app/api/votos";
+import { Candidato, users } from "@/app/api/votos";
 import Chart from "chart.js/auto";
 import { LegacyRef, useEffect, useRef, useState } from "react";
 export default function Table() {
+  const [update, setUpdate] = useState<number>(0);
   const [table, setTable] = useState<Candidato[]>();
   async function votos() {
     setTable(
@@ -20,9 +21,6 @@ export default function Table() {
   }
   const chart: LegacyRef<any> = useRef();
   useEffect(() => {
-    if (!table) {
-      votos();
-    }
     if (table) {
       chart.current.style.width = "100%";
       chart.current.style.height = "100%";
@@ -46,7 +44,7 @@ export default function Table() {
           ],
         },
         options: {
-          responsive:false,
+          responsive: false,
           scales: {
             y: {
               max: 10,
@@ -56,9 +54,11 @@ export default function Table() {
       });
     }
   });
-
+  useEffect(() => {
+    votos();
+  },[users]);
   return (
-    <div className=" w-[100%] h-[800px]">
+    <div className=" w-[100%]  h-[800px] ">
       <canvas className=" relative top-[50px]" ref={chart}></canvas>
     </div>
   );
