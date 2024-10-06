@@ -34,17 +34,16 @@ export default function Voto({ params }: any) {
         Vote em qual você mais gostou
       </h1>
       <div className=" gap-y-[50px] pt-[10px] grid grid-cols-1  grid-rows-[auto] justify-between w-[100%] justify-items-center xl:grid-cols-3 md:grid-cols-2">
-        {data.map((box,index) => {
+        {data.map((box, index) => {
           return (
-            
-            <Box key={index}
+            <Box
+              key={index}
               Param={Nome}
               Nome={box.Nome}
               Color={box.Color}
               Img={box.Img}
               Votos={box.Votos}
             />
-            
           );
         })}
       </div>
