@@ -1,4 +1,4 @@
-
+/* eslint-disable padded-blocks */
 export interface Candidato {
   Img: string;
   Nome: string;
@@ -42,5 +42,5 @@ export const canditados: Candidato[] = [
     Votos: 0,
     Color: "black",
     Img: `${process.env.images}angry_birds.png`,
-  }
+  },
 ];

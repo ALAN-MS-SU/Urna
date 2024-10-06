@@ -1,7 +1,6 @@
 import { useRouter } from "next/navigation";
 export default function Box(props: any) {
-  const router = useRouter()
-  console.log(props)
+  const router = useRouter();
   return (
     <div
       className="box overflow-hidden rounded-[10px] w-[300px] h-[400px] flex flex-col items-center xl:w-[400px]"
@@ -21,18 +20,21 @@ export default function Box(props: any) {
         style={{ border: `${props.Color} 2px solid` }}
         onClick={async (e) => {
           e.preventDefault();
-          const data = new FormData()
-          data.append("Nome",props.Param)
-          data.append("Candidato",props.Nome)
-          await fetch(`${process.env.NEXT_PUBLIC_api}/voto`,{method:"POST",body:data}).then(data=>{
-            if(data.ok)
-              return 
-            return console.log(data)
-          }).catch(err=>{
-            if(err)
-              return console.log(err)
+          const data = new FormData();
+          data.append("Nome", props.Param);
+          data.append("Candidato", props.Nome);
+          await fetch(`${process.env.NEXT_PUBLIC_api}/voto`, {
+            method: "POST",
+            body: data,
           })
-          router.push("/")
+            .then((data) => {
+              if (data.ok) return;
+              return console.log(data);
+            })
+            .catch((err) => {
+              if (err) return console.log(err);
+            });
+          router.push("/");
         }}
       >
         Votar
