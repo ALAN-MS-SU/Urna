@@ -1,4 +1,3 @@
-/* eslint-disable padded-blocks */
 import { NextRequest, NextResponse } from "next/server";
 import { users } from "../votos";
 export async function POST(req: NextRequest) {

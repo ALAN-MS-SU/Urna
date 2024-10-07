@@ -1,4 +1,3 @@
-/* eslint-disable padded-blocks */
 "use client";
 import { useRouter } from "next/navigation";
 import { LegacyRef, useRef } from "react";

@@ -1,4 +1,3 @@
-/* eslint-disable padded-blocks */
 export interface Candidato {
   Img: string;
   Nome: string;

@@ -1,4 +1,3 @@
-/* eslint-disable padded-blocks */
 "use client";
 import { Candidato } from "@/app/api/votos";
 import "@/assets/styles/global.css";
