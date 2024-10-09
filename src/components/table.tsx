@@ -46,7 +46,7 @@ export default function Table() {
           ],
         },
         options: {
-          responsive: false,
+          responsive: true,
           scales: {
             y: {
               max: 10,
