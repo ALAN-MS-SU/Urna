@@ -1,0 +1,13 @@
+services:
+  web:
+   build: .
+   container_name: Urna
+   restart: always
+   ports: 
+    - 3000:3000
+   env_file:
+    - ./.env
+   volumes:
+    - urna:/var/lib/web/data
+volumes:
+ urna:
